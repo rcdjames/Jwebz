@@ -1,2 +1,2 @@
 # Jwebz
-All my web stuff
+Web stuff
