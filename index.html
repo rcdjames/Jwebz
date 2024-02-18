@@ -2,7 +2,8 @@
 	HTML5 Template
 	18/10/2023
 	A basic HTML5 template for web development.
-	Bootstrap 5.3.2
+	-Bootstrap 5.3.2
+	-jQuery 3.7.1
 -->
 <!doctype html>
 <html lang="en">
@@ -14,73 +15,109 @@
 	<title>HTML5 Template</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-1"></div>
-			<div class="col-10">
-				<div class="banner">
-					<h1 class="text-center">HTML5+Bootstrap Template</h1>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-						the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-						of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-						but also the leap into electronic typesetting, remaining essentially unchanged. It was
-						popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-						and more recently with desktop publishing software like Aldus PageMaker including versions of
-						Lorem Ipsum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed metus nec justo congue
-						ultrices et ut diam. Fusce finibus imperdiet risus, vel gravida est lacinia a. Nulla fermentum
-						fringilla orci, sagittis euismod est. Maecenas venenatis ultricies lorem a efficitur. Duis
-						ligula lacus, vestibulum a augue et, fermentum dapibus lacus. Aliquam tincidunt, elit bibendum
-						tempus eleifend, est lorem venenatis orci, sit amet egestas augue libero sed justo. Nam
-						ultricies non odio vel cursus. Vivamus et risus faucibus, rhoncus diam in, mollis sem. Ut
-						blandit diam nec lectus bibendum, a porttitor purus tincidunt. Phasellus sapien felis, tempor ut
-						porta quis, vehicula sit amet tortor. Curabitur sit amet neque pharetra, tincidunt dolor a,
-						interdum augue. Proin ut faucibus tellus. Nunc non consequat ligula.</p>
-				</div>
-				<div class="row">
-					<div class="col-6 content-left">
-						<h2>Heading 1</h2>
-						<p>It is a long established fact that a reader will be distracted by the readable content of a
-							page when looking at its layout. The point of using Lorem Ipsum is that it has a
-							more-or-less normal distribution of letters, as opposed to using 'Content here, content
-							here', making it look like readable English. Many desktop publishing packages and web page
-							editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
-							uncover many web sites still in their infancy. Various versions have evolved over the years,
-							sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-						<ul class="list-unstyled">
-							<li><a class="icon-link" href="">Click here 1</a></li>
-							<li><a class="icon-link" href="">Click here 2</a></li>
-							<li><a class="icon-link" href="">Click here 3</a></li>
-							<li><a class="icon-link" href="">Click here 4</a></li>
-							<li><a class="icon-link" href="">Click here 5</a></li>
-							<li><a class="icon-link" href="">Click here 6</a></li>
-						</ul>
-					</div>
-					<div class="col-6 content-right">
-						<h2>Heading 2</h2>
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-							classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-							Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
-							Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the
-							word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
-							sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-							Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
-							popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-							amet..", comes from a line in section 1.10.32.</p>
-						<ul class="list-unstyled">
-							<li><a class="icon-link" href="">Click here 1</a></li>
-							<li><a class="icon-link" href="">Click here 2</a></li>
-							<li><a class="icon-link" href="">Click here 3</a></li>
-							<li><a class="icon-link" href="">Click here 4</a></li>
-						</ul>
-					</div>
-				</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-10 content-top">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item active" aria-current="page">Home</li>
+						<li class="breadcrumb-item"><a href="#">Link 1</a></li>
+						<li class="breadcrumb-item"><a href="#">Link 2</a></li>
+						<li class="breadcrumb-item"><a href="#">Link 3</a></li>
+					</ol>
+				</nav>
+				<h1 class="display-1 text-center">HTML5+Bootstrap Template</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Justo nec
+					ultrices dui sapien eget mi. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper
+					malesuada. Semper auctor neque vitae tempus quam pellentesque. Elementum facilisis leo vel fringilla
+					est ullamcorper eget nulla facilisi. Quam lacus suspendisse faucibus interdum posuere lorem ipsum.
+					Diam in arcu cursus euismod quis viverra nibh. Sit amet est placerat in. Eu volutpat odio facilisis
+					mauris sit amet massa vitae tortor. Pellentesque sit amet porttitor eget dolor. Vulputate eu
+					scelerisque felis imperdiet proin fermentum leo vel orci.</p>
+				<p>Ut etiam sit amet nisl. Amet cursus sit amet dictum sit amet justo. Odio eu feugiat pretium nibh
+					ipsum consequat nisl. Condimentum mattis pellentesque id nibh tortor. Ac auctor augue mauris augue
+					neque gravida in. Lorem sed risus ultricies tristique nulla aliquet enim. Sapien eget mi proin sed
+					libero. Consectetur purus ut faucibus pulvinar elementum. Metus dictum at tempor commodo ullamcorper
+					a. Nisl purus in mollis nunc sed. Quis lectus nulla at volutpat diam ut venenatis tellus in. Mauris
+					in aliquam sem fringilla ut morbi. Id semper risus in hendrerit gravida rutrum quisque non tellus.
+					Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.</p>
 			</div>
-			<div class="col-1"></div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 content-middle-left">
+				<h2 class="display-3">Heading 1</h2>
+				<p>Sed faucibus turpis in eu mi bibendum neque. Condimentum vitae sapien pellentesque habitant morbi
+					tristique senectus. Sagittis eu volutpat odio facilisis mauris sit amet massa. Dictumst vestibulum
+					rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Luctus venenatis lectus magna
+					fringilla urna. Id semper risus in hendrerit gravida. Sit amet risus nullam eget felis eget nunc
+					lobortis. Pulvinar pellentesque habitant morbi tristique senectus et netus. Consectetur adipiscing
+					elit duis tristique sollicitudin nibh sit. Risus nec feugiat in fermentum posuere urna nec tincidunt
+					praesent. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Commodo sed egestas
+					egestas fringilla phasellus faucibus scelerisque eleifend donec. Vulputate dignissim suspendisse in
+					est ante in nibh mauris. Ut diam quam nulla porttitor massa id neque. Lectus magna fringilla urna
+					porttitor rhoncus dolor. Commodo odio aenean sed adipiscing diam donec adipiscing. Nisl vel pretium
+					lectus quam id leo in vitae turpis. Nisl rhoncus mattis rhoncus urna. Felis eget nunc lobortis
+					mattis aliquam faucibus purus.</p>
+				<ul class="list-unstyled">
+					<li><button type="button" class="btn btn-outline-primary" id="catfact">Cat Fact</button></li>
+					<li><button type="button" class="btn btn-outline-primary" id="joke">Joke</button></li>
+				</ul>
+				<div id="webcontent"></div>
+			</div>
+			<div class="col-md-5 content-middle-right">
+				<h2 class="display-3">Heading 2</h2>
+				<p>A iaculis at erat pellentesque adipiscing commodo. Ac turpis egestas sed tempus urna et pharetra
+					pharetra. Feugiat vivamus at augue eget arcu. At in tellus integer feugiat. Ultrices sagittis orci a
+					scelerisque purus semper eget duis. Tellus cras adipiscing enim eu turpis egestas. Molestie ac
+					feugiat sed lectus vestibulum. Ac orci phasellus egestas tellus. Aliquam malesuada bibendum arcu
+					vitae elementum curabitur vitae nunc sed. Imperdiet sed euismod nisi porta lorem. Quisque id diam
+					vel quam elementum.</p>
+				<ul class="list-unstyled">
+					<li><a class="icon-link" href="">click here 1</a></li>
+					<li><a class="icon-link" href="">click here 2</a></li>
+					<li><a class="icon-link" href="">click here 3</a></li>
+					<li><a class="icon-link" href="">click here 4</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 content-bottom">
+				<h1 class="display-3 text-center">Heading 3</h1>
+				<p>Lectus quam id leo in vitae turpis massa. Magna etiam tempor orci eu lobortis elementum nibh tellus
+					molestie. Faucibus interdum posuere lorem ipsum dolor. Mauris pellentesque pulvinar pellentesque
+					habitant morbi. Odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet eget sit amet tellus
+					cras adipiscing enim eu. Mi eget mauris pharetra et ultrices neque. Malesuada fames ac turpis
+					egestas integer eget aliquet. Tellus cras adipiscing enim eu turpis egestas. Consectetur a erat nam
+					at lectus urna duis convallis convallis. Eu mi bibendum neque egestas congue quisque. Sed augue
+					lacus viverra vitae. Purus semper eget duis at tellus at urna.</p>
+				<p>Eget mauris pharetra et ultrices neque ornare aenean. Quis varius quam quisque id diam. Neque egestas
+					congue quisque egestas. Vitae tempus quam pellentesque nec. Aenean et tortor at risus viverra. Id
+					donec ultrices tincidunt arcu non sodales neque sodales. Ut aliquam purus sit amet luctus venenatis
+					lectus magna fringilla. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Donec
+					et odio pellentesque diam volutpat commodo. Ipsum nunc aliquet bibendum enim facilisis gravida neque
+					convallis. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Nulla pellentesque
+					dignissim enim sit. Est lorem ipsum dolor sit amet consectetur adipiscing. A scelerisque purus
+					semper eget duis at tellus at. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit.
+					Id aliquet risus feugiat in ante metus dictum at. Odio euismod lacinia at quis risus sed vulputate.
+				</p>
+			</div>
+			<div class="col-md-1"></div>
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -90,7 +127,16 @@
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script>
 		$(document).ready(function () {
-			// code
+			$("#joke").on("click", function () {
+				$.get("https://official-joke-api.appspot.com/random_joke", function (joke) {
+					$("#webcontent").append("<p>" + joke.setup + " - " + joke.punchline + "</p>");
+				});
+			});
+			$("#catfact").on("click", function () {
+				$.get("https://catfact.ninja/fact", function (catfact) {
+					$("#webcontent").append("<p>" + catfact.fact + "</p>");
+				});
+			});
 		});
 	</script>
 </body>
