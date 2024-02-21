@@ -4,6 +4,8 @@
 
 .content-middle {
     border: 1px solid;
+    border-radius: 8px;
+    background-color: aliceblue;
 }
 
 .content-left {}
